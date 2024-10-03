@@ -1,0 +1,13 @@
+#colores-fondos{
+    p{color:red;}
+    h2{color:rgb(0,255,0);}
+    background-color: #03c6fc;
+}
+#tipografia{
+    h2{
+        font-family: sans-serif, Arial;
+        font-size: 45px;
+    }
+    h3,
+    p{}
+}
