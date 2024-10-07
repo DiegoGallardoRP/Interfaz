@@ -1,13 +1,118 @@
+/*1*/
 #colores-fondos{
     p{color:red;}
     h2{color:rgb(0,255,0);}
     background-color: #03c6fc;
 }
+/*2*/
 #tipografia{
     h2{
         font-family: sans-serif, Arial;
         font-size: 45px;
     }
-    h3,
-    p{}
+    h3{
+        font-family: "Times New Roman", Times, serif;
+        font-weight: 500;
+    }
+    p{
+        font-family: "Times New Roman", Times, serif;
+        line-height: 10;
+    }
+}
+/*3*/
+#espaciado{
+    div{
+        padding-left: 20px;
+        text-align: center;
+    }
+    li{
+        margin-bottom: 20px;
+    }
+}
+/*4*/
+#bordes-sombras{
+    div{
+        border: blue solid;
+        border-radius: 20px;
+        box-shadow: #03c6fc;
+    }
+}
+/*5*/
+#posicionamiento{
+    div{
+        position: relative;
+        bottom: 800px;
+    }
+    footer{
+        position: absolute;
+        top: 2300px;        
+    }
+}
+/*6*/
+#productos{
+    li{
+        list-style-type: upper-roman;
+        list-style-position: initial;
+    }
+}
+/*7*/
+#botones{
+    button{
+        font-family: sans-serif, Arial;
+        background-color: red;
+        border: blue solid;
+    }
+}
+/*8*/
+#tablas{
+    table,tr,th{
+        border: red solid;
+        padding: 50;
+    }
+}
+/*9*/
+div{
+    margin-top: 30px;
+}
+/*10*/
+img{
+    width: 50px;
+    height: 80px;
+}
+/*11*/
+form{
+    border:green solid;
+    padding: 2%;
+    background-color: yellowgreen;
+}
+/*12*/
+.elemento{
+    border: red solid;
+    box-shadow: blue;
+}
+/*13*/
+a{
+    border:#315a44;
+    text-decoration: dotted;
+}
+/*14*/
+#efectos-texto{
+    text-shadow: 2px 2px #a200ff;
+    h2{
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    h3{
+        text-transform: lowercase;
+        letter-spacing: 10px;
+    }
+    p{
+        text-transform: capitalize;
+        letter-spacing: 2px;
+    }
+}
+/*15*/
+#contenedor{
+    display:inline-block;
+
 }
