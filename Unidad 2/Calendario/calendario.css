@@ -1,0 +1,11 @@
+.calendario{
+
+}
+ul{
+    list-style-type: none;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.dia-uno{
+    grid-row-start: 5;
+}
