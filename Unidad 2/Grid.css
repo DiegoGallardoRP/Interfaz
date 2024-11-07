@@ -18,8 +18,6 @@
 .celda1{
     background-color: blue;
     grid-area: area1;
-    /* width: 50px;
-    height: 50px; */
 }
 .celda2{
     background-color: yellow;
