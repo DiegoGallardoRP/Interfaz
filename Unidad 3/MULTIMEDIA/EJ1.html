@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .foto-1>img{
+            width:800;
+            height: 600;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/EJ1.css">
+</head>
+<body>
+    <div class="foto-1">
+        <figure>
+            <img class="general" src="./imagenes/Ryan.jpg">
+            <p>Imagen 800x600</p>
+        </figure>      
+    </div>
+    <div class="foto-2">
+        <picture>
+            <source srcset="photo.webp" type="imagenes/webp" />
+            <source srcset="photo.png" type="imagenes/png" />
+            <img src="./imagenes/Ryan.jpg" alt="photo">
+        </picture>
+    </div>
+    <div class="foto-3">
+        <picture>
+            <source srcset="./imagenes/photo.webp" type="image/webp" media="(min-width: 1200px)" />
+            <source srcset="./imagenes/photo.png" type="image/png" media="(min-width: 1200px)" />
+            
+            <source srcset="./imagenes/photo-medium.webp" type="image/webp" media="(min-width: 768px)" />
+            <source srcset="./imagenes/photo-medium.png" type="image/png" media="(min-width: 768px)" />
+            
+            <source srcset="./imagenes/photo-small.webp" type="image/webp" />
+            <source srcset="./imagenes/photo-small.png" type="image/png" />
+    
+            <img src="./imagenes/Ryan.jpg" alt="Descripción de la imagen">
+        </picture>
+    </div>
+</body>
+</html>
