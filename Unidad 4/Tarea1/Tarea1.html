@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/T1.css">
+</head>
+<body>
+    <form id="formulario" name="formulario">
+
+        <div class="flex-container">
+            <label>Nombre:</label>
+            <input type="text" placeholder="Escribe tu usuario" id="usuario" name="usuario" class="usuario" required>
+        </div>
+        
+        <div class="flex-container">
+            <label>Password:</label>
+            <input type="password" placeholder="titular de la consulta" id="password" name="password" class="password" required>
+        </div>
+
+        <div class="flex-container">
+            <label>Email:</label>
+            <input type="text" placeholder="email" id="email" name="email" class="email" required>
+        </div>
+        
+        <div class="flex-container">
+            <label>Teléfono:</label> 
+            <input type="text" placeholder="+34 666 777 888" id="telefono" pattern="^\+34\s\d{3}\s\d{3}\s\d{3}$" name="telefono" class="telefono" required>
+        </div>
+
+        <div class="flex-container">
+            <label>URL:</label>
+            <input type="text" placeholder="http://dominio.com" id="url" name="url" class="url" required>
+        </div>
+         
+        <div class="flex-container">
+            <label>Edad:</label>
+            <input type="number" min="18" max="100" id="edad" name="edad" class="edad" required>
+        </div>
+        
+        <div class="flex-container">
+            <label>Fecha de nacimiento:</label> 
+            <input type="date" id="fecha" name="fecha" class="fecha" required>
+        </div>
+        
+        <label>Mensaje:</label>
+        <p><textarea type="date" id="mensaje" name="mensaje" class="mensaje" rows="6" cols="35" 
+            placeholder="describe brevemente en menos de 300 carácteres" maxlength="300"></textarea></p>
+
+        <button type="button" name="enviar" id="boton" class="boton">enviar datos</button>
+    </form>
+</body>
+</html>
