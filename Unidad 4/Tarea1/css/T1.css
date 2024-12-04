@@ -35,6 +35,13 @@ button:hover{
     cursor: pointer;
 }
 
+input:valid {
+    background-color: #d4edda;
+}
+input:invalid {
+    background-color: #f8d7da;
+}
+
 .flex-container{
     display: flex;
     justify-content: space-between;
