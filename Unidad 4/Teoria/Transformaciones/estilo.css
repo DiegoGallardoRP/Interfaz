@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+h1{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+.container{
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.caja{
+    width:200px;
+    height: 200px;
+}
+.caja1{
+    background-color: red;
+    rotate: 45deg;
+    transform: translate(10rem,10rem);
+}
+.caja2{
+    background-color: yellow;
+    rotate: -10deg;
+}
+.caja3{
+    transform-origin: left top;
+    rotate: 35deg;
+    background-color: blue;
+}
+.caja4{
+    background-color: pink;
+    transform: skew(-100deg,0);
+}
+.caja5{
+    background-color: cadetblue;
+    margin: 50px auto;
+    /* transition-property: border-radius;
+    transition-duration: 2s;
+    transition-timing-function: ease-in; */
+    transition: all 1s linear;
+    box-shadow: 0 0 5px limegreen, 0 0 10px limegreen, 0 0 25px limegreen, 0 0 200px limegreen;
+}
+.caja5:hover{
+    border-radius: 50%;
+}
