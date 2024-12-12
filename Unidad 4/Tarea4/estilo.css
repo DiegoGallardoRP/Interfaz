@@ -17,35 +17,23 @@ body {
     position: relative; /* Necesario para las partículas de nieve */
 }
 
-/* Animación de nieve */
 @keyframes snow {
     0% {
-        transform: translateY(-100px);
+        transform: translateY(-100px) translateX(calc(100px * var(--i)));
     }
     100% {
-        transform: translateY(100vh); /* Hacer que la nieve caiga desde la parte superior */
+        transform: translateY(100vh) translateX(calc(-100px * var(--i))); /* Hacer que la nieve caiga desde la parte superior */
     }
 }
-
 .snowflake {
     position: absolute;
     top: -50px;
     width: 5px;
     height: 5px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     border-radius: 50%;
     opacity: 0.8;
     animation: snow linear infinite;
-}
-
-.snowflake:nth-child(odd) {
-    animation-duration: 10s;
-    animation-delay: calc(-10s * random());
-}
-
-.snowflake:nth-child(even) {
-    animation-duration: 15s;
-    animation-delay: calc(-15s * random());
 }
 
 .box {
@@ -54,11 +42,12 @@ body {
 }
 
 .box::before {
-    content: 'Bye Bye';
+    content: '3... 2... 1...';
     position: absolute;
     top: -0.75em;
     width: 100%;
     color: #fff;
+    text-shadow: 0 0 5px #ffffff;
     text-align: center;
     font-size: 2em;
     transition: 1s;
@@ -71,7 +60,7 @@ body {
 }
 
 .box::after {
-    content: 'Happy New Year';
+    content: 'Feliz año nuevo';
     position: absolute;
     left: 0;
     top: -0.75em;
@@ -95,6 +84,7 @@ body {
 .box span {
     display: inline-block;
     color: #fff;
+    text-shadow: 0 0 20px #ffffff;
     font-size: 10em;
     font-weight: bold;
     transition: 2s;
@@ -119,6 +109,10 @@ body {
     opacity: 0;
     filter: blur(30px);
     transition: 2s;
+}
+.box::after{
+    color: #ffd700;
+    text-shadow: 0 0 5px #bea200;
 }
 
 .box:hover span:nth-child(3):after {
