@@ -17,6 +17,10 @@ body {
     position: relative; /* Necesario para las partículas de nieve */
 }
 
+.estrella{
+    display: none;
+}
+
 @keyframes snow {
     0% {
         transform: translateY(-100px) translateX(calc(100px * var(--i)));
@@ -119,4 +123,37 @@ body {
     transform: rotate(0deg) translateY(0px);
     opacity: 1;
     filter: blur(0px);
+}
+
+/*animacion estrella*/
+@keyframes starAnimation {
+    0% {
+        transform: translateX(-50vw);
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(50vw);
+        opacity: 0;
+    }
+}
+
+.estrella {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50px; /* Ajusta el tamaño de la estrella */
+    height: 50px;
+    background-image: url('estrella.png'); /* Imagen de la estrella */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: starAnimation 3s forwards infinite;
+}
+
+.box:hover .estrella {
+    display: block;
 }
