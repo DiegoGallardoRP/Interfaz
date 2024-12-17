@@ -14,7 +14,7 @@ body {
     background: #262626;
     background-image: url('navidad.jpg');
     background-size: cover;
-    position: relative; /* Necesario para las partículas de nieve */
+    position: relative; 
 }
 
 .estrella{
@@ -26,7 +26,7 @@ body {
         transform: translateY(-100px) translateX(calc(100px * var(--i)));
     }
     100% {
-        transform: translateY(100vh) translateX(calc(-100px * var(--i))); /* Hacer que la nieve caiga desde la parte superior */
+        transform: translateY(100vh) translateX(calc(-100px * var(--i))); 
     }
 }
 .snowflake {
@@ -125,7 +125,7 @@ body {
     filter: blur(0px);
 }
 
-/*animacion estrella*/
+
 @keyframes starAnimation {
     0% {
         transform: translateX(-50vw);
@@ -146,9 +146,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 50px; /* Ajusta el tamaño de la estrella */
+    width: 50px; 
     height: 50px;
-    background-image: url('estrella.png'); /* Imagen de la estrella */
+    background-image: url('estrella.png'); 
     background-size: contain;
     background-repeat: no-repeat;
     animation: starAnimation 3s forwards infinite;
