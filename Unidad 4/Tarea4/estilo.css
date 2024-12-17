@@ -144,10 +144,10 @@ body {
 .estrella {
     display: block;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 50px; 
-    height: 50px;
+    top: 30%;
+    left: 40%;
+    width: 500px; 
+    height: 500px;
     background-image: url('estrella.png'); 
     background-size: contain;
     background-repeat: no-repeat;
